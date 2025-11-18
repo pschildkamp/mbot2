@@ -1,0 +1,135 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 4. The Robot Can Steer Itself!
+
+[.lead]
+_In this assignment, the robot will move itself! So you will no longer use your computer as a remote control, but your robot will really do its own thing. Let's hope that goes well!_
+
+=== The line-following module
+
+If you turn the mBot over, you will see the line-following module on the front. The line-following module consists of four infrared sensors: two on the left and two on the right. All sensors have an infrared LED and an infrared detector.
+
+NOTE: Infrared light is super dark red light. It is also called heat radiation. We cannot see it, but some animals can. Rattlesnakes, for example, can see a bird or mouse very well in the dark: the heat from their bodies is visible to the snake as infrared light...
+
+The LEDs of the sensors emit infrared light. When the mBot drives over a light surface, such as white paper, it reflects the infrared light and the detector sees it. This then gives a signal to the mBot. A dark surface such as a black line does not reflect any light. The detector then sees nothing and therefore does not give a signal to the mBot.
+
+The signals from the four sensors (or the lack thereof) are combined by the mBot into a number:
+
+image::assignment4/linevalues.png[align="center"]
+
+// page break
+<<<
+
+.Line follower sensor number values
+****
+image::assignment4/linevalues.png[align="center"]
+
+[%autowidth]
+[cols=3*,options="header"]
+|===
+|Number
+|Meaning
+|Action
+
+|0
+|Both sensors see infrared light, because they are both next to the line. |What the mBot should do now depends on whether it last saw the line on the left or on the right?
+
+Perhaps it is safest to drive back a bit (in reverse)
+
+|1
+|The right sensor does not see infrared, because it is above the line. The left one does see infrared, because it is above white paper.
+|The mBot must steer to the right
+
+|2
+|The left sensor does not see infrared, because it is above the line. The right one does see infrared, because it is above white paper.
+|The mBot must steer to the left
+
+|3
+|Both sensors do not see infrared, because they are above the line.
+|The mBot must go straight ahead
+|===
+****
+
+// page break
+<<<
+
+=== Steering with the line follower module
+
+We are going to use the line follower to let the mBot drive around the map itself. So without you having to steer yourself!
+
+.Step 1 - Create variables
+Create variables 'line value':
+
+image:assignment4/create-variable.png[]
+
+.Step 2 - Main loop
+In the first assignment we mentioned the basic elements of each program. Do you recognize them? Do you still know what they are called?
+
+image:assignment4/mainloop.png[]
+
+.Step 3 - Read line tracking module
+We read the number of the line tracking module again and again in our main loop and store it in the variable 'line value'.
+
+image:assignment4/readlinesensor.png[]
+
+// page break
+<<<
+
+.Step 4 - Drive forward
+Driving forward is the easiest: on your sheet you can see that when the mBot is exactly on the line, the sensor has the value '3'. Then we drive straight ahead.
+
+image:assignment4/moveforward.png[]
+
+.Step 5 - To the left and to the right
+Copy the 'straight ahead' block from the previous step twice: one for left and one for right.
+
+Now use your sheet to think about how to adjust both blocks.
+
+.Step 6 - What if the mBot loses the line?
+
+The safest thing to do if the mBot does not see the line at all is to stop. Copy the 'straight ahead' block again
+and adjust it.
+
+.Step 7 - How do you know the value of line value?
+
+You can show the value of line value on the display. You can do this by placing the next block directly after the create command.
+
+image:assignment4/showlinevalue.png[]
+
+.Step 8 - Did you notice the colours on the map? 
+
+You can give the MBot another command as soon as it encounters a colour. Try adding the following block
+
+image:assignment4/reactoncolor.png[]
+
+// page break
+<<<
+
+=== Cheat sheet: Straight ahead, left, right
+
+image:assignment4/cheatsheet-leftright.png[]
+
+=== Try it out!
+
+Time to see if it works:
+
+- Click all the sub-blocks together
+- Connect the USB cable
+- Place the mBot on a *white* part of the 8-track
+- Upload your program
+
+When the upload is finished, pull the USB cable out of the mBot. Then carefully place the mBot on the track and press the play button.
+
+// page break
+<<<
+
+=== Cheat sheet: End result
+
+image:assignment4/endresult.png[endresult,400,400]
+
+=== Sometimes the mBot loses the line..
+
+- Why do you think that is?
+- Can you see what he was doing just before he lost the line?
+- What can you do about it?

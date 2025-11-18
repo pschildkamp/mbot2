@@ -1,0 +1,23 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 5. De ultrasone sensormodule
+
+Met de ultrasone sensor kan de mBot afstand meten tot een voorwerp dat voor hem staat. De sensor zendt geluidjes uit. Die
+weerkaatsen tegen het voorwerp en het duurt eventje voor ze weer terug zijn: een heel korte echo eigenlijk. De tijd die
+dat duurt geeft aan hoe ver weg het voorwerp is.
+
+NOTE: Ultrasoon geluid is geluid met een heel hoge toonhoogte. Zo hoog dat geen mens het meer kan horen. Maar sommige dieren
+wel. Een vleermuis bijvoorbeeld. Die doet precies wat de mBot ook doet: heel hoge gilletjes maken en luisteren hoe lang
+het duurt voordat de echo van zijn eigen gilletje weer terug is.
+Vleermuizen kunnen dat zo goed dat ze zo vliegjes in het stikkedonker kunnen vinden en opeten!
+image:opdracht5/vleermuis-echo.png[]
+
+.Stap 1 - voeg de ultrasone sensor toe
+
+Voeg het volgende blok toe aan de hoofdlus onder het laatste lijnvolgerblok:
+
+image:opdracht5/afstandsensor.png[]
+
+Upload je programma weer en probeer het uit!
+

@@ -1,0 +1,149 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:icons: font
+:nofooter:
+
+== 1. Richtingaanwijzers Maken
+
+[.lead]
+_Tijd om aan de slag te gaan! We gaan op afstand bestuurbare knipperlichtjes maken met de mCore computer. Dat worden later de richtingaanwijzers van onze robot. Ook leer je in deze opdracht hoe de programmeeromgeving werkt. Dat is een computerprogramma om computerprogramma's mee te maken... Succes!_
+
+=== Voorbereiden
+
+Maak eerst wat meer ruimte op je scherm: Ga naar image:instelling.png[] bovenin je scherm en klik op 'Verberg podium'. De panda verdwijnt nu van het scherm zodat je wat meer ruimte hebt op je werkblad.
+
+=== Begin van je programma
+
+
+.Stap 1
+Kies uit de blokjes categorie image:blokje/categorie/gebeurtenis.png[Gebeurtenis] *Gebeurtenis* het blokje image:blokje/groene-vlag.png[Groene Vlag] of en sleep dit met je muis bovenin je werkblad. Dit is het startpunt van je eerste programma.
+
+.Stap 2
+Kies uit de blokjes categorie image:blokje/categorie/toon.png[LED] *LED* het blokje image:blokje/set-leds-onboard-off.png[]
+
+We gebruiken dit blokje hier om alle ledjes juist uit te zetten, dus zet de waardes op _'alle'_ en vul voor de getallen overal _'0'_ in. Sleep het blokje daarna onder het vorige blokje zodat het vast klikt.
+
+.Stap 3
+Kies uit de blokjes categorie image:blokje/categorie/besturen.png[Besturen] *Besturen* het blokje image:blokje/herhaal-tot.png[Herhaal Tot] en sleep dit onder het vorige blokje.
+
+.Stap 4
+Kies uit de blokjes categorie image:blokje/categorie/waarnemen.png[waarnemen] *waarnemen* het blokje image:blokje/toets-ingedrukt.png[] en sleep dit in het vorige blokje, achter het woordje _'tot'_.
+
+.Stap 5
+Kies uit de blokjes categorie image:blokje/categorie/besturen.png[Besturen] *Besturen* het blokje image:blokje/stop-alle.png[] en sleep dit onder het '_herhaal tot_'-blokje.
+
+// page break
+<<<
+
+=== Resultaat
+Je hebt als het goed is nu dit:
+
+image:opdracht1/stap5.png[]
+
+Dit lijkt misschien niet veel soeps, maar eigenlijk is dit de belangrijkste structuur van je programma. Van ieder computerprogramma eigenlijk:
+
+====
+[discrete]
+=== Ieder computerprogramma heeft dit:
+Startblok:: Hier begint je programma altijd. Bij ons is dat het blokje image:blokje/groene-vlag.png[Groene Vlag] +
+Door er met je muis op te klikken, start je het programma.
+Start waarden blok:: Hier worden eenmalig belangrijke dingen klaargezet voor het programma. +
+Bij ons zetten we hier alle ledjes uit met het blokje image:blokje/set-leds-onboard-off.png[]
+Hoofdlus:: Alles in de hoofdlus wordt telkens opnieuw uitgevoerd door je programma. +
+Dat is bij ons alles _binnen_ het blokje image:blokje/herhaal-tot.png[] en is nu dus nog leeg...
+Stopconditie:: In onze hoofdlus staat: _'herhaal tot toets spatie ingedrukt'_ +
+Wanneer je dat doet, ga je uit de hoofdlus. Maar daarna komt er niets meer, dus stopt het programma. +
+Onze stopconditie is dus het blokje image:blokje/toets-ingedrukt.png[]
+Eindblok:: Hier zet je alles weer terug zoals het stond vlak voordat je programma begon. Dus ledjes en motoren weer
+uitzetten bijvoorbeeld. Bij ons is dit het blokje image:blokje/stop-alle.png[]
+====
+
+Laten we gauw beginnen met dingen maken voor in onze hoofdlus!
+
+// page break
+<<<
+
+=== Linker richtingaanwijzer
+Ik denk dat je wel is opgevallen dat de blokjes binnen iedere blokjes categorie allemaal dezelfde kleur hebben. Dat is handig om ze makkelijker te vinden. Probeer het maar eens:
+
+Bouw het volgende stukje programma na en let goed op de kleurtjes. Je snapt nu in welke blokjes categorieën je ze moet zoeken. Het resultaat mag even los op je werkblad blijven staan, naast de hoofdlus die je al eerder gemaakt had.
+
+WARNING: Let op: Het  _'als-dan'_ blokje lijkt erg op het _'herhaal-tot'_ blokje. Kijk dus goed!
+
+image:opdracht1/richting-links.png[Richtingaanwijzer Links]
+
+=== Rechter richtingaanwijzer
+Maak nu het stukje programma voor de rechter richtingaanwijzer. Dat is bijna hetzelfde als de linker: alleen de pijltjestoets waarop je moet drukken en het ledje dat aan moet gaan zijn anders.
+
+
+[TIP]
+====
+Je kunt de linker richtingaanwijzer ook kopiëren en de kopie aanpassen om de rechter richtingaanwijzer te maken:
+
+Klik met de _rechtermuisknop_ op het _'als-dan'_ blok en kies dan _"Kopiëren"_. De kopie hangt nu aan je muis. Beweeg een stukje naar beneden en klik nu met de _linkermuisknop_  om de kopie los te laten. Maak de aanpassingen die nodig zijn.
+
+====
+
+Als het goed is, heb je nu dit blok erbij gemaakt:
+
+image:opdracht1/richting-rechts.png[Richtingaanwijzer Rechts]
+
+// page break
+<<<
+
+=== Onderdelen samenvoegen
+Je hebt nu drie onderdelen op werkblad. Je kunt nu de twee blokken van de linker- en rechter richtingaanwijzer aan elkaar klikken en dan het geheel in de hoofdlus
+plaatsen, het _'herhaal tot...'_ blok
+
+=== Resultaat
+
+image:opdracht1/eindresultaat.png[]
+
+// page break
+<<<
+=== Testen
+
+Tijd om uit te proberen! Je gaat nu je laptop met de mCore computer van de mBot verbinden en deze draadloos besturen.
+
+==== Verbinding maken
+
+.Stap 1
+Steek de kabel in een USB-poort van je laptop. Zet nu de mCore-computer aan met het zwarte schuifknopje aan de zijkant.
+
+.Stap 2
+Maak het podium weer zichtbaar: het Ga naar image:instelling.png[] bovenin je scherm en klik opnieuw op 'Verberg podium'. De knop 'Verbinden' wordt nu onderin je scherm zichtbaar. Klik erop.
+
+.Stap 3
+Je ziet nu een dialoog venster waar je aan moet geven _hoe_ je wil verbinden. (Met een kabel, bluetooth, een  dongle...) Kies het tabje 'USB'. Klik vervolgens op de 'Verbinden'-knop.
+
+[%collapsible]
+._<- Laat zien: Verbinden met de USB._
+====
+image:opdracht1/kies-usb.png[]
+====
+
+
+
+==== Uitproberen
+Wanneer je hierna op het hoedje met het groene vlaggetje klikt, gaan de LED-jes op de mCore-computer uit. Druk dan nu maar eens op de gekozen mBot toetsen. Wat gebeurt er?
+
+Druk daarna op de spatiebalk. Zie je wat er gebeurt op het scherm? En met de mCore?
+
+// page break
+<<<
+
+====
+[discrete]
+== *Zelf verzinnen* image:icon/owl.png[float="right"]
+***
+.Knippergeluid
+Het geluid dat de richtingaanwijzers maken, wordt bepaald door de image:blokje/speel-noot.png[] blokjes. Je kunt de geluiden veranderen door de waarde voor '_noot_' aan te passen.
+
+.Knippertijd
+De tijd dat je richtingaanwijzers aan of uit zijn, wordt bepaald door de waardes in de '_tellen_' vakjes Probeer een paar andere waardes uit.
+
+.Ander soort Knipperlichten
+Je hebt nu knipperlichten van een standaard auto gemaakt. Maar je kunt ook andere soorten knipperlichten maken. Bijvoorbeeld die van een politieauto of een brandweerauto. Of van een ambulance. Of van een trein. Of van een vliegtuig. Of van een ruimteschip. Of van een... Nou ja, je snapt het wel. Je kunt het zo gek niet bedenken of je kunt het maken. Probeer het maar eens uit!
+====
+
+=== Klaar!
+Gefeliciteerd! Je hebt je eerste mCore programma geschreven!

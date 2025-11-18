@@ -1,0 +1,52 @@
+ifndef::imagesdir[:imagesdir: image]
+:nofooter:
+
+== Prepping Laptops
+
+=== Installing mBlock IDE
+Download mBlock from https://mblock.makeblock.com/en-us/download/ and install.
+
+=== Configuring mBlock IDE
+Start mBlock and configure the following:
+
+image:prepare01.png[prepare,200,100] Click on the globe and select the language ENGLISH
+
+image:prepare02.png[prepare2,100,50] Click on the X of the CyberPi under Devices to remove it.
+
+Then click on the + of add
+
+image:prepare03.png[voorbereiding03,400,200] Select the MBOT2 and click OK
+
+image:prepare04.png[] Click on the + of extension
+
+image:prepare05.png[prepare05,200,100] Click on Device extensions and click on add 'Ultrasonic Sensor 2' and 'QUAD RGB Sensor'
+
+== Facilitator instructions
+Below you will find all assignment cards in order. During the workshop, hand out the assignment cards _per assignment_ to the groups. Take them back at the end of an assignment and then hand out the cards for the next assignment.
+
+As an *introduction* you start with a short presentation in which you ask/explain what a robot actually is. (_A
+computer-controlled machine with sensors._) You will also introduce the CyberPi, the mBot chassis (with only the
+motors, wheels, line sensor and support studs for the mCore pre-assembled) and the mBlock programming environment. (_A
+computer program for creating computer programs._)
+
+For *chapter 1* the children only need the CyberPi module.
+
+In *chapter 2* the children first mount the CyberPi on the mBot. They then create a program to manually steer the mBot over the
+circuit with the Joystick.
+
+In *chapter 3* they learn how the code is sent to the MBot.
+
+In *chapter 4* they will automate the steering by using the line-following sensor. At the beginning of the assignment,
+you have to explain the difference between the interactive mode of the CyberPi with the
+image:block/starting.png[Starting, 100] block and the USB cable.
+
+In *chapter 5*, the children first assemble the ultrasonic distance sensor. You can provide some explanation for this
+by making a comparison with bats. They then expand the program from the previous assignment with code
+to respond to an obstacle that may be on the course. A cow crossing the road?
+
+In *chapter 6*, they learn how to combine the internet with AI with the CyberPi and MBot
+
+:sectnums: 3
+
+// page break
+<<<

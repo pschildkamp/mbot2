@@ -1,0 +1,137 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 4. De Robot Kan Zelf Sturen!
+
+[.lead]
+_In deze opdracht gaat de robot zelf bewegen! Je gaat dus niet meer je computer als afstandsbediening gebruiken, maar je robot gaat echt zelf z'n gang. Als dat maar goed gaat!_
+
+=== De lijnvolgmodule
+
+Als je de mBot omdraait, zie je aan de voorkant de lijnvolgmodule zitten. De lijnvolgmodule bestaat uit vier infraroodsensoren: twee links en twee rechts. Alle sensoren hebben een infraroodledje en een infrarooddetector.
+
+NOTE: Infrarood licht is super donker rood licht. Het wordt ook wel warmtestraling genoemd. Wij kunnen we het niet zien, maar sommige dieren wel. Ratelslangen bijvoorbeeld kunnen in het donker heel goed een vogeltje of muis zien: de warmte van hun lijfjes is voor de slang namelijk zichtbaar als infrarood licht...
+
+De ledjes van de sensoren stralen infrarood licht. Als de mBot over een licht oppervlak rijdt, zoals wit papier, dan reflecteert dat het infrarode licht en ziet de detector dat. Deze geeft dan een signaaltje aan de mBot. Een donker oppervlak zoals een zwarte lijn reflecteert geen licht. De detector ziet dan niks en geeft dus ook geen signaaltje aan de mBot.
+
+De signaaltjes van de vier sensoren (of juist het ontbreken ervan) wordt door de mBot gecombineerd tot een getal:
+
+image::opdracht3/lijnvolger-waardes.png[align="center"]
+
+// page break
+<<<
+
+.Lijnvolger sensor getal waardes
+****
+image::opdracht3/lijnvolger-waardes.png[align="center"]
+
+[%autowidth]
+[cols=3*,options="header"]
+|===
+|Getal
+|Betekenis
+|Actie
+
+|0
+|Beide sensoren zien infrarood licht, want ze zitten allebei naast de lijn.
+|Wat de mBot nu moet doen hangt er maar vanaf: zag hij de lijn voor het laatst aan de linker- of aan de rechterkant?
+Misschien is het wel het meest veilige om een stukje terug te rijden (achteruit)
+
+|1
+|De rechter sensor ziet geen infrarood, omdat deze boven de lijn zit. De linker ziet wel infrarood, want die zit boven wit papier.
+|De mBot moet naar rechts sturen
+
+|2
+|De linker sensor ziet geen infrarood, omdat deze boven de lijn zit. De rechter ziet wel infrarood, want die zit boven wit papier.
+|De mBot moet naar links sturen
+
+|3
+|Beide sensoren zien geen infrarood, omdat ze boven de lijn zitten.
+|De mBot moet rechtdoor gaan
+|===
+****
+
+// page break
+<<<
+
+=== Sturen met de lijnvolgmodule
+
+We gaan de lijnvolger gebruiken om de mBot zelf de plattegrond rond te laten rijden. Dus zonder dat je zelf hoeft te sturen!
+
+.Stap 1 - Variabelen maken
+Maak variabelen 'lijnwaarde':
+
+image:opdracht4/variabelen-maken.png[]
+
+.Stap 2 - Hoofdlus
+In de eerste opdracht hebben we de basiselementen van ieder programma genoemd. Herken je ze? Weet je nog hoe ze heten?
+
+image:opdracht4/hoofdlus.png[]
+
+.Stap 3 - Lijnvolgmodule uitlezen
+We lezen het getal van de lijnvolgmodule telkens opnieuw uit in onze hoodlus en slaan deze op in de variabele 'lijnwaarde'.
+
+image:opdracht4/leeslinesensor.png[]
+
+// page break
+<<<
+
+.Stap 4 - Naar voren rijden
+Naar voren rijden is het makkelijkste: op je blaadje zie je dat als de mBot precies op de lijn is, de sensor de waarde '3'
+heeft. Dan rijden we dus rechtdoor.
+
+image:opdracht4/naar-voren.png[]
+
+.Stap 5 - Naar links en naar rechts
+Kopieer het 'rechtdoor'-blok uit de vorige stap twee keer: eentje voor linksaf en eentje voor rechtsaf.
+
+Bedenk nu zelf met behulp van je blaadje hoe je beide blokjes moet aanpassen.
+
+.Stap 6 - Wat als de mBot de lijn kwijt is?
+
+Het veiligste om te doen als de mBot de lijn helmaal niet ziet is om te stoppen. Kopieer nog een keer het 'rechtdoor'-blok
+en pas het aan.
+
+.Stap 7 - Hoe weet je de waarde van lijnwaarde?
+
+Je kan de waarde van lijnwaarde op het display laten tonen. Dit kan je doen door het volgende blokje direct na het maak commando te plaatsen.
+
+image:opdracht4/toonlijnwaarde.png[]
+
+.Stap 8 - Was je al de kleuren opgevallen op de landkaart? Je kan de MBot een ander commando geven zodra hij een kleur tegenkomt.
+Probeer het volgende blokje maar eens toe te voegen
+
+image:opdracht4/reageeropkleur.png[]
+
+
+// page break
+<<<
+
+=== Spiekblaadje: Rechtdoor, links, rechts
+
+image:opdracht4/spieken-links-rechts.png[]
+
+=== Uitproberen!
+
+Tijd om te kijken of het werkt:
+
+- Klik alle deelblokken in elkaar
+- Sluit de USB-kabel aan
+- Zet de mBot op een *wit* stuk van de 8-baan
+- Upload je programma
+
+Wanneer de upload klaar is, trek je de USB kabel uit de mBot. Daarna zet je de mbot voorzichtig op het parcours en druk op de play knop.
+
+// page break
+<<<
+
+=== Spiekblaadje: Eindresultaat
+
+image:opdracht4/hele-programma.png[endresult,400,400]
+
+=== Soms raakt de mBot de lijn kwijt..
+
+- Hoe komt dat denk je?
+- Kun je zien wat hij deed vlak voordat hij de lijn kwijt was?
+- Wat kun je eraan doen?
+

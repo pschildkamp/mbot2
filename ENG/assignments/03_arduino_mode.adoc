@@ -1,0 +1,51 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 3. Arduino mode
+
+[.lead]
+_In the previous assignments you let the robot drive via the joystick. We will now look at how you can let your robot do its own thing._
+
+=== View Machine Code in Arduino mode
+
+We create our Scratch programs in the computer program 'Makeblock'. When you start your program, your Scratch
+program actually runs within Makeblock. Makeblock translates each Scratch command into a machine language instruction and sends them
+one by one to the mBot.
+
+For example, a command like image:block/speedexample.png[] translates Makeblock to:
+
+ ff 55 07 00 02 05 9c ff 64 00
+
+====
+[discrete]
+== *Try it yourself* image:icon/owl.png[float="right"]
+***
+.Sending machine code to the mBot
+
+In Arduino mode we can see exactly which machine codes Makeblock sends to your mBot! Make this program:
+
+image:assignment3/rgb-led.png[]
+
+Make sure that the Mode switch for devices is set to UPLOAD!
+
+image:assignment3/upload.png[]
+
+Then open 'Arduino mode':
+
+image:assignment3/arduino-mode.png[]
+
+Start the program. Look carefully at the output at the bottom right of your screen. This is the machine code that Makeblock sends to your
+mBot. Can you find out what the difference is between the machine codes for red, white and blue?
+====
+
+// page break
+<<<
+
+=== Uploading in Arduino mode
+
+When your laptop is connected to the mBot in 'remote control mode', Makeblock sends the Scratch blocks
+one by one to your mBot, translated into machine code. And in Arduino mode you can see what those machine codes look like,
+and at what point they are sent.
+
+The disadvantage of this is that your laptop has to be connected to the mBot, and your program has to run in Makeblock.
+What we actually want is to send our Scratch program to the mBot and run it on the mBot itself. We call that uploading. You can then disconnect your laptop or even turn it off, and the mBot can still run your program, without help. We also upload from Arduino mode.

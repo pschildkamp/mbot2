@@ -1,0 +1,24 @@
+ifndef::imagesdir[:imagesdir: ../image]
+:nofooter:
+
+== 6. Connecting to AI
+
+You can also connect the MBot to the internet. This makes the AI ​​functionalities available. Let's try this out too.
+
+.Step 1 - Connect to the internet to use AI. Add this block and fill in the SSID and PASSWORD data that are on the table.
+
+image:assignment6/internet.png[]
+
+.Step 2 - Let the MBot say something in a language. At the moment he can speak 12 other languages. Try it out!
+
+image:assignment6/saysomething.png[]
+
+.Step 3 - End result can be something like
+
+image:assignment6/aiendresult.png[]
+
+.Step 4 - Now try to combine everything you have learned yourself!
+
+Have fun!!
+
+Team Devoxx4Kids

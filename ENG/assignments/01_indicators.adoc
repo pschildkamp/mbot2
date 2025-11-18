@@ -1,0 +1,139 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:icons: font
+:nofooter:
+
+== 1. Making Indicators
+
+[.lead]
+_Time to get started! We are going to make remote-controlled indicators with the mCore computer. These will later become the indicators of our robot. In this assignment you will also learn how the programming environment works. This is a computer program for making computer programs... Good luck!_
+
+=== Preparation
+
+First make some more space on your screen: Go to image:settings.png[] at the top of your screen and click on 'Hide stage'. The panda will now disappear from the screen so that you have some more space on your worksheet.
+
+=== Start of your program
+
+.Step 1
+Choose from the blocks category image:block/category/event.png[Event] *Event* the block image:block/starting.png[starting] or and drag it with your mouse to the top of your worksheet. This is the starting point of your first program.
+
+.Step 2
+Choose from the blocks category image:block/category/led.png[LED] *LED* the block image:block/set-leds-onboard-off.png[]
+
+We use this block here to turn off all the LEDs, so set the values ​​to _'all'_ and fill in _'0'_ for the numbers everywhere. Then drag the block under the previous block so that it clicks into place.
+
+.Step 3
+Choose from the blocks category image:block/category/control.png[Control] *Control* the block image:block/repeat-until.png[Repeat Until] and drag it under the previous block.
+
+.Step 4
+Choose from the blocks category image:block/category/sensing.png[sensing] *sensing* the block image:block/key-pressed.png[] and drag it into the previous block, behind the word _'until'_.
+
+.Step 5
+Choose from the blocks category image:block/category/control.png[Control] *Control* the block image:block/stop-all.png[] and drag it under the '_repeat until_' block.
+
+// page break
+<<<
+
+=== Result
+You should now have this:
+
+image:assignment1/step5.png[]
+
+This may not seem like much, but this is actually the most important structure of your program. Of every computer program, actually:
+
+====
+[discrete]
+=== Every computer program has this:
+Start block:: This is where your program always starts. In our case, this is the block image:block/starting.png[Starting] +
+By clicking on it with your mouse, you start the program.
+Start values ​​block:: This is where important things are set up for the program once. +
+In our case, we turn off all the LEDs here with the block image:block/set-leds-onboard-off.png[]
+Main loop:: Everything in the main loop is executed again and again by your program. +
+For us, that is everything _within_ the block image:block/repeat-until.png[] and is now still empty...
+Stop condition:: In our main loop it says: _'repeat until key space pressed'_ +
+When you do that, you leave the main loop. But after that, nothing comes, so the program stops. +
+So our stop condition is the block image:block/key-pressed.png[]
+End block:: Here you put everything back as it was just before your program started. So turning off LEDs and motors, for example. For us, this is the block image:block/stop-all.png[]
+====
+
+Let's quickly start making things for our main loop!
+
+// page break
+<<<
+
+=== Left indicator
+I think you've noticed that the blocks within each block category all have the same color. That's handy to find them more easily. Try it out:
+
+Replicate the following piece of program and pay close attention to the colors. You now understand in which block categories you should look for them. The result can remain on your worksheet for a while, next to the main loop that you had already made.
+
+WARNING: Note: The _'if-then'_ block looks a lot like the _'repeat-until'_ block. So look carefully!
+
+image:assignment1/leftindicator.png[Direction Indicator Left]
+
+=== Right direction indicator
+Now make the piece of program for the right direction indicator. That is almost the same as the left one: only the arrow key that you have to press and the LED that has to go on are different.
+
+[TIP]
+====
+You can also copy the left direction indicator and adjust the copy to make the right direction indicator:
+
+Click with the _right mouse button_ on the _'if-then'_ block and then choose _"Copy"_. The copy is now hanging on your mouse. Move a bit down and now click with the _left mouse button_ to release the copy. Make the necessary adjustments.
+
+====
+
+If all goes well, you have now added this block:
+
+image:assignment1/rightindicator.png[Direction indicator Right]
+
+// page break
+<<<
+
+=== Merge parts
+You now have three parts on the worksheet. You can now click the two blocks of the left and right direction indicator together and then place the whole thing in the main loop, the _'repeat until...'_ block
+
+=== Result
+
+image:assignment1/endresult.png[]
+
+// page break
+<<<
+=== Testing
+
+Time to try it out! You are now going to connect your laptop to the mCore computer of the mBot and control it wirelessly.
+
+==== Connecting
+
+.Step 1
+Plug the cable into a USB port on your laptop. Now turn on the mCore computer using the black slide button on the side.
+
+.Step 2
+Make the stage visible again: Go to image:settings.png[] at the top of your screen and click 'Hide stage' again. The 'Connect' button will now be visible at the bottom of your screen. Click on it.
+
+.Step 3
+You will now see a dialog window where you have to indicate _how_ you want to connect. (With a cable, Bluetooth, a dongle...) Select the 'USB' tab. Then click on the 'Connect' button.
+
+image:assignment1/choose-usb.png[]
+
+==== Try it out
+When you then click on the hat with the green flag, the LEDs on the mCore computer will go out. Now press the selected mBot keys. What happens?
+
+Then press the space bar. Do you see what happens on the screen? And with the mCore?
+
+// page break
+<<<
+
+====
+[discrete]
+== *Create your own* image:icon/owl.png[float="right"]
+***
+.Blinking sound
+The sound that the indicators make is determined by the image:block/playnote.png[] blocks. You can change the sounds by adjusting the value for '_noot_'.
+
+.Blinking time
+The time that your indicators are on or off is determined by the values ​​in the '_count_' boxes. Try out a few other values.
+
+.Other type of indicators
+You have now made indicators for a standard car. But you can also make other types of indicators. For example, those of a police car or a fire engine. Or an ambulance. Or a train. Or an airplane. Or a spaceship. Or a... Well, you get the idea. You can't think of anything that you can't make. Just try it out!
+====
+
+=== Done!
+Congratulations! You've written your first mCore program!

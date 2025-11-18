@@ -1,0 +1,53 @@
+ifndef::imagesdir[:imagesdir: image]
+:cc-licence: https://creativecommons.org/licenses/by-nc-sa/4.0
+:doctype: book
+:toc-title: Contents
+:toc: left
+:nofooter:
+
+= Robotics Workshop with the mBot
+
+image:DevoxxWithoutBrackets_PNG_1000px.png[]
+
+"_Robotics workshop with the mBot_" by
+Oussama Chougna,
+Martin Visser,
+Eddy Vos,
+Boet van Westerop,
+Frank van Westerop
+and Blue4IT Professionals BV, is xref:license.adoc#License[licensed] under {cc-licence}[CC BY-NC-SA 4.0]
+
+image:creative-commons-licence.png[]
+
+'''
+
+//page break
+<<<
+
+// Chapter 1 - Direction indicators only with the CyberPi
+include::assignments/01_indicators.adoc[]
+
+// page break
+<<<
+// Chapter 2 - Control the MBot with the joystick
+include::assignments/02_steering.adoc[]
+
+// page break
+<<<
+// Chapter 3 - Letting the Robot Drive Itself
+include::assignments/03_arduino_mode.adoc[]
+
+// page break
+<<<
+// Chapter 4 - Automatic steering with the line following sensor
+include::assignments/04_linefollower.adoc[]
+
+// page break
+<<<
+// Chapter 5 - Ultrasonic sensor
+include::assignments/05_distancesensor.adoc[]
+
+// page break
+<<<
+// Chapter 6 - AI
+include::assignments/06_AI.adoc[]

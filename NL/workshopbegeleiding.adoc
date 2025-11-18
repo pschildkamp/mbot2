@@ -1,0 +1,55 @@
+ifndef::imagesdir[:imagesdir: images]
+:nofooter:
+
+== Laptops preppen
+
+=== mBlock IDE installeren
+Download mBlock van https://mblock.makeblock.com/en-us/download/ en installeer.
+
+=== mBlock IDE configureren
+Start mBlock op en configureer het volgende:
+
+
+image:voorbereiding01.png[voorbereiding,200,100] Klik op het wereldbolletje en selecteer de taal NEDERLANDS
+
+image:voorbereiding02.png[voorbereiding02,100,50] Klik bij Apparaten op de X van de CyberPi om die te verwijderen.
+
+Klik vervolgens op de + van toevoegen
+
+image:voorbereiding03.png[voorbereiding03,400,200] Selecteer de MBOT2 en klik op OK
+
+image:voorbereiding04.png[] Klik op de + van extensie
+
+image:voorbereiding05.png[voorbereiding05,200,100] Klik op Apparaat extensies en klik op toevoegen van 'Ultrasonic Sensor 2' en 'QUAD RGB Sensor'
+
+== Begeleidersinstructie
+Hieronder vind je alle opdrachtkaarten in volgorde. Deel tijdens workshop de opdrachtkaarten _per opdracht_ uit aan de
+groepjes. Neem ze aan het einde van een opdracht weer in en deel dan de kaarten voor de volgende opdracht uit.
+
+Als *introductie* begin je met een korte presentatie waarin je vraagt/uitlegt wat een robot eigenlijk is. (_Een door een
+computer bestuurde machine met sensoren._) Verder introduceer je de CyberPi, het mBot chassis (met alleen de
+motoren, wielen, lijnsensor en support-studs voor de mCore voorgemonteerd) en de mBlock-programmeeromgeving. (_Een
+computerprogramma om computerprogramma's mee te maken._)
+
+Voor *hoofdstuk 1* hebben de kinderen alleen de CyberPi module nodig.
+
+In *hoofdstuk 2* monteren de kinderen eerst de CyberPi op de mBot. Ze maken dan een programmaatje om de mBot handmatig over
+het circuit te sturen met de Joystick.
+
+In *hoofdstuk 3* leren ze hoe de code naar de MBot verstuurd wordt.
+
+In *hoofdstuk 4* gaan ze de besturing automatiseren door de lijnvolgsensor te gebruiken. Aan het begin van de opdracht
+moet je even het verschil uitleggen tussen de interactieve modus van de CyberPi met het
+image:blokje/groene-vlag.png[Groene Vlag, 100]-blokje gecombineerd met de 2.4G dongle en de uploadmodus met het
+image:blokje/mbot-programma.png[mBot Programma, 70]-blokje en de USB-kabel.
+
+In *hoofdstuk 5* monteren de kinderen eerst de ultrasone afstandssensor. Je kunt hiervoor wat uitleg geven
+door een vergelijking met vleermuizen te maken. Ze breiden vervolgens het programma van de vorige opdracht uit met code
+om te reageren op een hindernis die zich op het parcours kan bevinden. Een koe die oversteekt?
+
+In *hoofdstuk 6* leren ze hoe ze internet met AI kunnen combineren met de CyberPi en MBot
+
+:sectnums: 3
+
+// page break
+<<<

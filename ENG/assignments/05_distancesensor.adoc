@@ -1,0 +1,21 @@
+ifndef::imagesdir[:imagesdir: ../image]
+:nofooter:
+
+== 5. The ultrasonic sensor module
+
+With the ultrasonic sensor, the mBot can measure the distance to an object that is in front of it. The sensor emits sounds. These
+reflect against the object and it takes a while for them to return: a very short echo, actually. The time that
+takes indicates how far away the object is.
+
+NOTE: Ultrasonic sound is sound with a very high pitch. So high that no human can hear it anymore. But some animals
+can. A bat, for example. It does exactly what the mBot does: makes very high-pitched screams and listens to how long
+it takes for the echo of its own scream to return.
+Bats are so good at this that they can find and eat flies in the pitch dark! image:assignment5/bat-echo.png[]
+
+.Step 1 - add the ultrasonic sensor
+
+Add the following block to the main loop below the last line follower block:
+
+image:assignment5/distancesensor.png[]
+
+Upload your program again and try it out!

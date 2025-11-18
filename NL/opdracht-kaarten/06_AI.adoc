@@ -1,0 +1,24 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 6. Verbinden met AI
+
+De MBot kan je ook met het internet verbinden. Hierdoor zijn de AI functionaliteiten beschikbaar. Laten wij dit ook uitproberen.
+
+.Stap 1 - Maak verbinding met het internet om AI te kunnen gebruiken. Voeg dit blokje toe en vul bij SSID en WACHTWOORD de gegevens in die op tafel liggen.
+
+image:opdracht6/internet.png[]
+
+.Stap 2 - Laat de MBot iets zeggen in een taal. Momenteel kan hij 12 andere talen spreken. Probeer het eens uit!
+
+image:opdracht6/zegiets.png[]
+
+.Stap 3 - Eindresultaat kan iets zijn als
+
+image:opdracht6/aieindresultaat.png[]
+
+.Stap 4 - Probeer nu zelf eens alles wat je geleerd hebt te combineren!
+
+Veel plezier!!
+
+Team Devoxx4Kids

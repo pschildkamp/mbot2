@@ -1,0 +1,132 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 2. Jij Bestuurt de Robot met de pijltoesten!
+
+[.lead]
+_In deze opdracht gaat de robot eindelijk bewegen! Je gaat de robot naar voren en achter laten rijden, en echt sturen. En stoppen natuurlijk._
+
+=== Vooruit en achteruit rijden
+We gaan de robot laten rijden! Volg onderstaande stappen:
+
+.Stap 1
+Maak het volgende stukje programma na en plaats het gewoon los op het werkblad, naast je programma van de vorige opdracht:
+
+image:opdracht2/vooruit-achteruit-stap1.png[alt=Vooruit achter,width=300]
+
+.Stap 2
+Kopieer het stukje programma van de vorige stap. (Weet je nog hoe dat moet?) Gebruik de rechtermuisknop om te kopiëren. Klik de kopie onder het stukje programma van stap 1 vast.
+
+.Stap 3
+Pas de toets en de rijrichting van één van de twee nieuwe programmablokjes aan. Plaats vervolgens het geheel in het programma
+dat je al had van de vorige opdracht. Plaats de nieuwe blokjes precies onder de bestaande '_als...dan_'-blokjes.
+
+.Stap 4
+Alle bewegingen moeten wel stoppen als het programma klaar is. Voeg daarom een image:blokje/stop-met-bewegen.png[width=230] blokje toe. Dit zet draaien op stop.
+
+// page break
+<<<
+
+=== Resultaat
+Je programma ziet er dan zo uit:
+
+image:opdracht2/vooruit-achteruit-stap3.png[width=350]
+
+=== Testen
+Start je programma en kijk wat er gebeurt als je op de joystick drukt. Pas op dat de robot niet van de tafel af rijdt!
+
+IMPORTANT: Druk op de A knop om het programma en de robot te laten stoppen! Of zet de schakelaar even uit!
+
+// page break
+<<<
+
+====
+[discrete]
+== *Zelf verzinnen* image:icon/owl.png[float="right"]
+***
+.Stoppen zonder te stoppen
+Je merkt dat de robot laten stoppen niet zo handig gaat: Je moet nu het hele programma laten stoppen om ook de robot te
+laten stoppen. Hoe kun je er voor zorgen dat de robot wel stopt met rijden maar niet het hele programma stopt?
+
+.Luisteren naar een toets
+Voeg een extra image:blokje/als-dan.png[width=100] -blokje toe met in het '_als_'-vakje een blokje dat naar een toets luistert. Bijvoorbeeld de '_s_'-toets (van 'stoppen').
+Laat in het '_dan_'-vakje de motoren stoppen. Probeer zelf te bedenken hoe dit moet.
+====
+
+=== Een betere manier om te stoppen
+Het werkt best aardig als we de robot naar een extra stop-knop laten luisteren. Maar eigenlijk is het veel makkelijker als de robot gewoon meteen stopt als je de pijltjes toets weer loslaat. Nu heb je we wel een image:opdracht2/pulled-forward.png[width=250] -blokje maar er bestaan geen '_toets...*niet* ingedrukt_'-blokjes, maar zoiets kunnen we wel zelf maken:
+
+.Stap 1
+Neem eerst het image:blokje/als-dan.png[width=100] -blokje los dat je in de laatste opdracht gemaakt hebt om de mBot te laten stoppen. Gooi maar weg, want we gaan het anders doen.
+
+.Stap 2
+Kies uit de blokjes categorie image:blokje/categorie/functies.png[Functies,80] het blokje image:blokje/niet-operator.png[Niet]
+en plaats hierin uit dezelfde blokjes categorie een image:blokje/of-operator.png[] -blokje.
+
+.Stap 3
+Kies uit de categorie waarnemen image:blokje/categorie/waarnemen.png[waarnemen,80] het volgende blokje image:opdracht2/joystick-pushed.png[width=250] twee keer. Pas de tekst aan naar '_pijl omhoog_' en '_pijl omlaag_'. Plaats de blokjes in de vakjes van het image:blokje/of-operator.png[] -blokje.
+
+.Stap 4
+Kies uit de blokjes categorie image:blokje/categorie/besturen.png[Besturen,40,40] een blokje image:blokje/herhaal-tot.png[] en plaats hierin het '_niet_'-blokje. Je hebt nu dit:
+
+image:opdracht2/beter-stoppen-stap4.png[stap4,600,300]
+
+// page break
+<<<
+
+.Stap 5
+Maak nu uit het bestaande programma de twee '_als-dan_'-blokjes los die de robot naar voor en achter laten gaan.
+Plaats deze in het '_herhaal-tot_'-blok van de vorige stap. Plaats nu een image:blokje/stop-met-bewegen.png[width=200] -blokje onder het '_herhaal-tot_'-blok. Dit laat de motoren stoppen wanneer de pijltjes toetsen niet worden ingedrukt. Je hebt nu dit:
+
+image:opdracht2/beter-stoppen-stap5.png[width=650]
+
+====
+[discrete]
+== *_Zelf verzinnen_* image:icon/owl.png[float="right"]
+***
+.Hoe werkt dit?
+Kun je zelf bedenken hoe dit werkt? Probeer het aan elkaar uit te leggen.
+
+.Terugplaatsen
+Plaats het blok terug in het programma. Weet je waar het moet komen?
+====
+
+// page break
+<<<
+
+=== Resultaat
+Als het goed is ziet je programma er nu zo uit:
+
+image:opdracht2/beter-stoppen-resultaat.png[resultaat,600,600]
+
+=== Testen
+Start je programma en kijk wat er gebeurt als je nu de joystick beweegt, vooral de omhoog- en omlaag natuurlijk. Als het goed is, gaat de robot naar voor en achter rijden. En stopt vanzelf als je ze weer loslaat! Als het niet werkt, kijk dan goed naar je programma en probeer te bedenken waarom niet. Als je er zelf niet uitkomt, mag je natuurlijk een begeleider vragen om mee te kijken.
+
+// page break
+<<<
+
+=== Naar links en rechts sturen
+Nu nog sturen! Als je op de joystick naar links of rechts drukt gaan wel de richtingaanwijzers aan, maar de mBot slaat nog niet links- of rechtsaf. Dat ga je nu maken.
+
+.Stap 1
+Maak precies zo'n blok als in stap 4 van de vorige opdracht, maar dan voor links en rechts in plaats van naar boven en naar beneden:
+
+image:opdracht2/links-rechts-sturen-stap1.png[width=550]
+
+.Stap 2
+Neem nu uit het bestaande programma de twee 'als-dan'-blokjes los die robot naar boven en beneden laten gaan. Plaats deze in het 'herhaal-tot'-blok van de vorige stap. Je hebt nu dit:
+
+image:opdracht2/links-rechts-sturen-stap2.png[width=500]
+
+.Stap 3
+Plaats nu dit hele 'herhaal-tot'-blok boven het al aanwezige 'herhaal-tot'-blok.
+
+// page break
+<<<
+
+=== Eindresultaat
+Top! Het programma is nu klaar. Als het goed is, ziet het er zo uit:
+
+image:opdracht2/eindresultaat.png[width=600]
+
+Probeer je robot eens over de plattegrond die je van de begeleiders krijgt te laten rijden. Probeer om netjes de zwarte lijn te volgen. Lastig hè?

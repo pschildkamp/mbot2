@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: images]
+:cc-licence: https://creativecommons.org/licenses/by-nc-sa/4.0
+:doctype: book
+:nofooter:
+
+= Robotics Workshop with the mBot
+
+image:DevoxxWithoutBrackets_PNG_1000px.png[]
+
+== License
+
+"_Robotics workshop with the mBot_" is licensed under the {cc-licence}[CC BY-NC-SA 4.0] license.
+
+image:creative-commons-licence.png[]
+
+If you want to edit or use this workshop material, in your own material or for other purposes, you may do so
+as long as you adhere to the terms and conditions stated in this license.
+
+In short, this boils down to the following, but read the {cc-licence}/legalcode.nl[formal license text] for the (boring) legal details:
+
+- *Attribution* - The names of the people and organizations that contributed to the content of the workshop must be mentioned on adaptations and derivative products of the original workshop material.
+- *NonCommercial* - The workshop material may be copied, distributed and used in your own workshop by anyone, but only for non-commercial purposes.
+- *ShareAlike* - Anyone is allowed to create and distribute new material derived from or based on this workshop material, but only under the same license.
+
+== Credits
+The following people and organizations contributed to this workshop material:
+
+* *Blue4IT Professionals BV* - Financially and organizationally making the workshops possible
+* *Nationale Nederlanden* - By providing 10 MBots version 2 to Stichting Devoxx4Kids Nederland
+* *Boet van Westerop* - Design of the course for the mBots
+* *Frank van Westerop* - Author of workshop material
+* *Martin Visser* - Author of workshop material
+* *Ousamma Chougna* - Author of workshop material
+* *Eddy Vos* - Author of workshop material

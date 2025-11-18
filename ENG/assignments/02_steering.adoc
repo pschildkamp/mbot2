@@ -1,0 +1,131 @@
+ifndef::imagesdir[:imagesdir: ../image]
+:nofooter:
+
+== 2. You Control the Robot with the Joystick!
+
+[.lead]
+_In this assignment, the robot will finally move! You will make the robot drive forwards and backwards, and really steer it. And stop of course._
+
+=== Driving forwards and backwards
+We are going to make the robot drive! Follow the steps below:
+
+.Step 1
+Copy the following piece of program and simply place it on the worksheet, next to your program from the previous assignment:
+
+image:assignment2/movement-step1.png[width=300]
+
+.Step 2
+Copy the piece of program from the previous step. (Do you remember how to do that?) Use the right mouse button to copy. Click the copy under the piece of program from step 1.
+
+.Step 3
+Adjust the key and the direction of travel of one of the two new program blocks. Then place the whole thing in the program
+that you already had from the previous assignment. Place the new blocks exactly under the existing '_if...then_' blocks.
+
+.Step 4
+All movements must stop when the program is finished. Therefore, add an image:assignment2/movement-step4.png[width=230] block. This stops rotation.
+
+// page break
+<<<
+
+=== Result
+Your program will then look like this:
+
+image:assignment2/movement-result1.png[width=350]
+
+=== Testing
+Start your program and see what happens when you press the joystick. Be careful that the robot does not drive off the table!
+
+IMPORTANT: Press the A button to stop the program and the robot! Or turn off the switch for a moment!
+
+// page break
+<<<
+
+====
+[discrete]
+== *Make up your own idea* image:icon/owl.png[float="right"]
+***
+.Stop without stopping
+You notice that stopping the robot is not very easy: You now have to stop the entire program to also stop the robot. How can you make sure that the robot stops driving but not the entire program?
+
+.Listen to a key
+Add an extra image:block/if-then.png[width=100] -block with a block in the '_if_' box that listens to a key. For example, the '_s_' key (for 'stop').
+Let the motors stop in the '_then_' box. Try to figure out how to do this yourself.
+====
+
+=== A better way to stop
+It works quite well if we let the robot listen to an extra stop button. But actually it is much easier if the robot just stops immediately when you release the arrow key. Now we do have an image:opdracht2/pulled-forward.png[width=250] block but there are no '_key...*not* pressed_' blocks, but we can make something like that ourselves:
+
+.Step 1
+First take the image:block/if-then.png[width=100] block that you made in the last assignment to make the mBot stop. Throw it away, because we are going to do it differently.
+
+.Step 2
+From the block category image:block/category/operators.png[Operators,80] choose the block image:block/not-operator.png[Niet]
+and place in it from the same block category an image:block/or-operator.png[] block.
+
+.Step 3
+From the category sensing image:block/category/sensing.png[Sensing,80] choose the following block image:assignment2/joystick-pushed.png[width=250] twice. Adjust the text to '_arrow up_' and '_arrow down_'. Place the blocks in the boxes of the image:blokje/of-operator.png[] block.
+
+.Step 4
+From the blocks category image:block/category/control.png[Control,40,40] choose a block image:block/repeat-until.png[] and place the '_not_' block in it. You now have this:
+
+image:assignment2/betterstopping-step4.png[step4,600,300]
+
+// page break
+<<<
+
+.Step 5
+Now detach the two '_if-then_' blocks from the existing program that make the robot move forward and backward.
+Place these in the '_repeat until_' block from the previous step. Now place a image:assignment2/movement-step4.png[width=200] block under the '_herwoord-tot_' block. This makes the motors stop when the arrow keys are not pressed. You now have this:
+
+image:assignment2/betterstopping-step5.png[width=650]
+
+====
+[discrete]
+== *_Discovery_* image:icon/owl.png[float="right"]
+***
+.How does this work?
+Can you figure out how this works? Try to explain it to each other.
+
+.Replace
+Place the block back in the program. Do you know where it should go?
+====
+
+// page break
+<<<
+
+=== Result
+If all goes well, your program should now look like this:
+
+image:assignment2/betterstopping-endresult.png[resultaat,600,600]
+
+=== Testing
+Start your program and see what happens when you now move the joystick, especially the up and down of course. If all goes well, the robot will drive forwards and backwards. And will stop automatically when you let go of them! If it doesn't work, take a good look at your program and try to figure out why not. If you can't figure it out yourself, you can of course ask a supervisor to take a look.
+
+// page break
+<<<
+
+=== Steering left and right
+Now steering! When you press the joystick left or right, the indicators will turn on, but the mBot will not turn left or right. You will make that now.
+
+.Step 1
+Make exactly the same block as in step 4 of the previous assignment, but for left and right instead of up and down:
+
+image:assignment2/leftright-step1.png[width=550]
+
+.Step 2
+Now take the two 'if-then' blocks from the existing program that make the robot go up and down. Place these in the 'repeat-until' block from the previous step. You now have this:
+
+image:assignment2/leftright-step2.png[width=500]
+
+.Step 3
+Now place this entire 'repeat-until' block above the already present 'repeat-until' block.
+
+// page break
+<<<
+
+=== End result
+Great! The program is now ready. If it's done right, it should look like this:
+
+image:assignment2/finalresult.png[width=600]
+
+Try to get your robot to drive over the map you get from the supervisors. Try to follow the black line neatly. Tricky, huh?

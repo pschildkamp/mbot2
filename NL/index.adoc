@@ -1,0 +1,54 @@
+ifndef::imagesdir[:imagesdir: images]
+:cc-licence:    https://creativecommons.org/licenses/by-nc-sa/4.0
+:doctype: book
+:toc-title: Inhoud
+:toc: left
+:nofooter:
+
+= Robotica Workshop met de mBot
+
+image:DevoxxWithoutBrackets_PNG_1000px.png[]
+
+"_Robotica workshop met de mBot_" door
+Oussama Chougna,
+Martin Visser,
+Eddy Vos,
+Boet van Westerop,
+Frank van Westerop
+en Blue4IT Professionals BV, is xref:licentie.adoc#Licentie[gelicentieerd] onder {cc-licence}[CC BY-NC-SA 4.0]
+
+image:creative-commons-licence.png[]
+
+'''
+
+// page break
+<<<
+
+// Hoofdstuk 1 - Richtingaanwijzers alleen met de mCore
+include::opdracht-kaarten/01_richtingaanwijzers.adoc[]
+
+// page break
+<<<
+// Hoofdstuk 2 - Monteer de mCore op de mBot en besturen met toetsen vanaf de laptop
+include::opdracht-kaarten/02_pijltjestoetsbesturing.adoc[]
+
+// page break
+<<<
+// Hoofdstuk 3 - De Robot zelf laten rijden
+include::opdracht-kaarten/03_arduino_mode.adoc[]
+
+// page break
+<<<
+// Hoofdstuk 4 - Automatische besturing met de lijnvolgsensor
+include::opdracht-kaarten/04_lijnvolger.adoc[]
+
+// page break
+<<<
+// Hoofdstuk 5 - Ultrasonic sensor
+include::opdracht-kaarten/05_afstandssensor.adoc[]
+
+// page break
+<<<
+// Hoofdstuk 6 - AI
+include::opdracht-kaarten/06_AI.adoc[]
+

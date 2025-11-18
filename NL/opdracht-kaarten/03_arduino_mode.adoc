@@ -1,0 +1,54 @@
+ifndef::imagesdir[:imagesdir: ../images]
+:nofooter:
+
+== 3. Arduino-mode
+
+[.lead]
+_In de vorige opdrachten heb je de robot laten rijden via de joystick. We gaan nu kijken hoe je je robot zelf z'n gang kan laten gaan._
+
+=== Machine Code bekijken in Arduino-mode
+
+We maken onze Scratch-programma's in het computerprogramma 'Makeblock'. Als je je programma start, draait jouw Scratch
+programma eigenlijk binnen Makeblock. Makeblock vertaalt iedere Scratch-opdracht in een machinetaalinstructie en stuurt die
+één voor één naar de mBot.
+
+Een opdracht als image:blokje/ga-met-snelheid-100.png[] vertaalt Makeblock bijvoorbeeld naar:
+
+ ff 55 07 00 02 05 9c ff 64 00
+
+====
+[discrete]
+== *Zelf uitproberen* image:icon/owl.png[float="right"]
+***
+.Machinecode naar de mBot sturen
+
+In Arduino mode kunnen we precies zien welke machinecodes Makeblock naar je mBot stuurt! Maak dit programmaatje:
+
+image:opdracht3/rgb-ledjes.png[]
+
+Zorg ervoor dat bij apparaten de Mode-schakelaar op UPLOADEN staat!
+
+image:opdracht3/upload.png[]
+
+Open vervolgens 'Arduino mode':
+
+image:opdracht3/arduino-mode.png[]
+
+Start het programma. Kijk goed naar de uitvoer rechts onder op je scherm. Dit is de machine code die makeblock naar je
+mBot stuurt. Kun je ontdekken wat het verschil is tussen de machine codes voor rood, wit en blauw?
+====
+
+// page break
+<<<
+
+=== Uploaden in Arduino-mode
+
+Wanneer je laptop in 'afstandsbedieningmodus' verbonden is met de mBot, dan stuurt Makeblock de Scratch-blokjes dus
+1 voor een naar je mBot, vertaalt in machinecode. En in Arduino-mode kun je dus zien hoe die machinecodes eruit zien,
+en op welk moment ze verstuurd worden.
+
+Het nadeel hiervan is dat je laptop verbonden moet zijn met de mBot, en je programma in Makeblock moet draaien. Wat we
+eigenlijk willen, is dat we ons Scratch-programma naar de mBot sturen en op de mBot zelf draaien. Uploaden noemen
+we dat. Je kunt dan de verbinding met je laptop verbreken of de laptop zelfs uitzetten, en dan nog kan de mBot gewoon je
+programma blijven draaien, zonder hulp. Uploaden doen we ook vanuit Arduino-mode.
+

@@ -1,0 +1,35 @@
+ifndef::imagesdir[:imagesdir: images]
+:cc-licence:    https://creativecommons.org/licenses/by-nc-sa/4.0
+:doctype: book
+:nofooter:
+
+= Robotica Workshop met de mBot
+
+image:DevoxxWithoutBrackets_PNG_1000px.png[]
+
+== Licentie
+
+"_Robotica workshop met de mBot_" is gelicentieerd onder de {cc-licence}[CC BY-NC-SA 4.0] licentie.
+
+image:creative-commons-licence.png[]
+
+Wanneer je dit workshop materiaal wilt bewerken of gebruiken, in eigen materiaal of voor andere doeleinden, dan mag dat
+zolang je je aan de in deze licentie genoemde voorwaarden houd.
+
+In het kort komt dat neer op het volgende, maar lees de {cc-licence}/legalcode.nl[formele licentie tekst] voor de (saaie) juridische details:
+
+- *Naamsvermelding* - De namen van de mensen en organisaties die bijgedragen hebben aan de inhoud van de workshop moeten
+worden vermeld op bewerkingen en afgeleide producten van het originele workshopmateriaal.
+- *NietCommercieel* - Het workshop materiaal mag door iedereen worden gekopieerd, gedistribueerd en in een eigen workshop worden gebruikt, maar alleen voor niet-commerciële doeleinden.
+- *GelijkDelen* - Het is iedereen toegestaan nieuw materiaal te creëren en te distribueren, afgeleid van of gebaseerd op dit workshopmateriaal, maar alleen onder dezelfde licentie.
+
+== Credits
+De volgende mensen en organisatie hebben bijgedragen aan dit workshopmateriaal:
+
+* *Blue4IT Professionals BV* - Financieel en organisatorich mogelijk maken van de workshops
+* *Nationale Nederlanden* - Met het verstrekken van 10 MBots versie 2 aan Stichting Devoxx4Kids Nederland
+* *Boet van Westerop* - Ontwerp van het parcours voor de mBots
+* *Frank van Westerop* - Auteur workshop materiaal
+* *Martin Visser* - Auteur workshop materiaal
+* *Ousamma Chougna* - Auteur workshop materiaal
+* *Eddy Vos* - Auteur workshop materiaal
